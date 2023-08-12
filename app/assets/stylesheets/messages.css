@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+}
+
+.sidebar_base {
+  width: 300px;
+  height: 100vh;
+  background-color: #253141;
+}
+
+.sidebar_top {
+  height: 100px;
+  background-color: #253141;
+  padding: 0px 20px;
+}
+
+.sidebar_room {
+  background-color: #2F3E51;
+  padding: 0px 20px;
+}
+
+.main_base {
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+}
+
+.main_top {
+  height: 100px;
+  background-color: #ffffff;
+  padding: 0px 40px;
+}
+
+.main_chat {
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  padding: 46px 40px 0px 40px;
+}
+
+.main_bottom {
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+}
