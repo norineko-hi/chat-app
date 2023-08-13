@@ -1,35 +1,10 @@
 <div class="wrapper">
 
-  <%= render "side_bar" %>
-  <%= render "main_chat" %>
 
   <div class="sidebar_base">
-    <div class="sidebar_top">
-      <div class="user_name">
-        <a href="#">NAME</a>
-      </div>
-      <div class="room_create">
-        <a href="#">チャットを作成する</a>
-      </div>
-    </div>
-    <div class="sidebar_room">
-      <div class="room_link">
-        <a href="#">testroom1</a>
-      </div>
-      <div class="room_link">
-        <a href="#">testroom2</a>
-      </div>
-    </div>
+    <%= render "side_bar" %>
   </div>
   <div class="main_base">
-    <div class="main_top">
-    メイントップ
-    </div>
-    <div class="main_chat">
-    メインチャット
-    </div>
-    <div class="main_bottom">
-    メインボトム
-    </div>
+    <%= render "main_chat" %>
   </div>
 </div>

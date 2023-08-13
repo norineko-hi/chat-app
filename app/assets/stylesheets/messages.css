@@ -57,16 +57,101 @@
   height: 100px;
   background-color: #ffffff;
   padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_room {
+  padding-top: 36px;
+  font-size: 24px;
+  color: #333;
+}
+
+.top_right {
+  padding-top: 40px;
+}
+
+.room_exit a {
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+  text-decoration: none;
 }
 
 .main_chat {
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 46px 40px 0px 40px;
+  overflow: scroll;
+}
+
+.message {
+  padding-bottom: 40px;
+}
+
+.m_line1 {
+  display: flex;
+  padding-top: 10px;
+}
+
+.m_user {
+  font-size: 16px;
+  color: #434a54;
+  padding-right: 10px;
+}
+
+.m_date {
+  font-size: 12px;
+  color: #999;
+}
+
+.m_line2 {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #434a54;
 }
 
 .main_bottom {
   height: 90px;
   background-color: #dddddd;
   padding: 20px 40px;
+  display: flex;
+}
+
+.input_form {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.m_text {
+  padding-left: 10px;
+  width: 100%;
+  height: 50px;
+  color: #dddddd;
+  border: none;
+}
+
+.m_image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.m_send {
+  background-color: #38aef0;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 15px;
+  font-size: 16px;
+  color: white;
+  border-style: none;
 }
