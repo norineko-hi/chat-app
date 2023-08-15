@@ -9,7 +9,7 @@
     <div class="sidebar_room">
       <% current_user.rooms.each do |r|%>
         <div class="room_link">
-          <a href=#><%= r.name %></a>
+          <%= link_to r.name, room_messages_path(r) %>
         </div>
       <% end %>
     </div>

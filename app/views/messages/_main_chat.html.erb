@@ -1,7 +1,7 @@
     <div class="main_top">
       <div class="top_left">
         <div class="login_room">
-        testroom1
+        <%= @room.name %>
        </div>
       </div>
       <div class="top_right">
@@ -42,15 +42,13 @@
       </div>
     </div>
 
-    <div class="main_bottom">
-      <div class="input_form">
-        <input type="text" placeholder="type a message" class="m_text">
-        <label class="m_image">
-          <span class="select_image">画像</span>
-          <input type="file" class="hidden">
-        </label>
-      </div>
-      <input type="submit" value="送信" class="m_send">
+  <%= form_with model: [@room, @message], class: 'main_bottom', local: true do |f| %>
+    <div class="input_form">
+      <%= f.text_field :content, class: 'm_text', placeholder: 'type a message' %>
+      <label class="m_image">
+        <span class="select_image">画像</span>
+        <%= f.file_field :image, class: 'hidden' %>
+      </label>
     </div>
-
-
+    <%= f.submit '送信', class: 'm_send' %>
+  <% end %>
