@@ -1,8 +1,8 @@
     <div class="main_top">
       <div class="top_left">
         <div class="login_room">
-        <%= @room.name %>
-       </div>
+          <%= @room.name %>
+        </div>
       </div>
       <div class="top_right">
         <div class="room_exit">
@@ -12,34 +12,7 @@
     </div>
 
     <div class="main_chat">
-      <div class="message">
-        <div class="m_line1">
-          <div class="m_user">
-          hi
-          </div>
-          <div class="m_date">
-          2023/08/13
-          </div>
-        </div>
-        <div class="m_line2">
-          <div class="m_message">
-          今日も元気。
-          </div>
-        </div>
-      </div>
-      <div class="message">
-        <div class="m_line1">
-          <div class="m_user">
-          hi
-          </div>
-          <div class="m_date">
-          2023/08/13
-          </div>
-        </div>
-        <div class="m_line2">
-        かわいい甘えんぼ。
-        </div>
-      </div>
+      <%= render partial: 'message', collection: @messages %>
     </div>
 
   <%= form_with model: [@room, @message], class: 'main_bottom', local: true do |f| %>
